@@ -1,0 +1,88 @@
+h1{
+    display: flex;
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+    height: 100px;
+}
+
+.navbar {
+    background-color: #f2f2f2; /* Set background color for the navbar */
+    overflow: hidden; /* Ensure that the navbar doesn't overflow its container */
+}
+
+.navbar-inactive {
+    float: left; /* Float the buttons to the left to create a horizontal layout */
+    display: block; /* Display the buttons as block elements */
+    color: rgb(0, 0, 0); /* Set text color */
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center; /* Center-align text within buttons */
+    padding: 14px 20px; /* Add padding to the buttons */
+    text-decoration: none; /* Remove default underline style */
+}
+
+.navbar-active {
+    float: left; /* Float the buttons to the left to create a horizontal layout */
+    display: block; /* Display the buttons as block elements */
+    color: rgb(255, 255, 255); /* Set text color */
+    background-color: rgb(36, 36, 36);
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center; /* Center-align text within buttons */
+    padding: 14px 20px; /* Add padding to the buttons */
+    text-decoration: none; /* Remove default underline style */
+}
+
+.navbar a:hover {
+    background-color: rgb(36, 36, 36); /* Change background color on hover */
+    color: rgb(255, 255, 255); /* Change text color on hover */
+}
+
+
+.submit-button {
+    background-color: #17a18d; /* Green background color */
+    border: none; /* Remove default button border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the button text */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make button display inline */
+    font-size: 16px; /* Set font size */
+    font-family: "Roboto Condensed", sans-serif;
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+  
+.submit-button:hover {
+    background-color: #115349; /* Darker green on hover */
+}
+
+.signup_boxes {
+    display: grid;
+    grid-template-columns: 1fr; /* Two-column layout */
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    font-family: "Roboto Condensed", sans-serif;
+}
+  
+.form-group {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+}
+
+label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    outline: 2px solid #181818; /* Add outline around focused form elements */
+}
